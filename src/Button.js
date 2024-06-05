@@ -1,5 +1,8 @@
-function Button({text, name = "Here"}) {
-  console.log(text);
-  return <button>{text} - {name}</button>;
+function Button({ text, name = "Here" }) {
+  return (
+    <button onClick={() => alert(text)}>
+      {text} - {name}
+    </button>
+  );
 }
 export default Button;
