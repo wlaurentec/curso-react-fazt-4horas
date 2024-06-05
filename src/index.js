@@ -3,12 +3,19 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { Greeting, UserCard } from "./Greeting";
 import Product, { Navbar } from "./Product";
-
+import Button from "./Button";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <React.StrictMode>
-    <UserCard
+  <>
+  <Button text="Click me"/>
+  <Button text="Play"/>
+  <Button text="Go to" name="Home"/>
+
+
+
+
+    {/* <UserCard
       name="John"
       amount={1000}
       married={true}
@@ -25,7 +32,6 @@ root.render(
       points={[99, 22, 32]}
       address={{ city: "California", country: "USA" }}
       
-    />
-    
-  </React.StrictMode>
+    /> */}
+    </>
 );
