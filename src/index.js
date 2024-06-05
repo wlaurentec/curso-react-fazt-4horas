@@ -6,5 +6,5 @@ import { TaskCard } from "./Task.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<>
-  <TaskCard />
+  <TaskCard ready={true}/>
 </>);
