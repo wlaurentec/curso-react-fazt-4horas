@@ -14,6 +14,18 @@ root.render(
       married={true}
       points={[99, 22, 32]}
       address={{ city: "New York", country: "USA" }}
+      greet={function () {
+        alert("Hello");
+      }}
     />
+    <UserCard
+      name="Joe"
+      amount={2000}
+      married={false}
+      points={[99, 22, 32]}
+      address={{ city: "California", country: "USA" }}
+      
+    />
+    
   </React.StrictMode>
 );

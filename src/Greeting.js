@@ -3,19 +3,17 @@ export function Greeting({ title, name }) {
   return <h1>{title}</h1>;
 }
 
-export function UserCard(props) {
-  console.log(props);
+export function UserCard({ name, amount, married, address, greet }) {
+  console.log(name, amount, married, address, greet);
   return (
     <div>
-      <h1>{props.name}</h1>
-      <p>{props.amount}</p>
-      <p>{props.married ? "Married" : "Not Married"}</p>
+      <h1>{name}</h1>
+      <p>{amount}</p>
+      <p>{married ? "Married" : "Not Married"}</p>
       <ul>
-        <li>City: {props.address.city}</li>
-        <li>Country: {props.address.country}:</li>
-
+        <li>City: {address.city}</li>
+        <li>Country: {address.country}:</li>
       </ul>
-    
     </div>
   );
 }
