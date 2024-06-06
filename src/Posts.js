@@ -1,3 +1,4 @@
+import { VscGlobe } from "react-icons/vsc";
 const Posts = () => {
   return (
     <button
@@ -7,6 +8,7 @@ const Posts = () => {
           .then((json) => console.log(json));
       }}
     >
+      <VscGlobe />
       Traer Datos
     </button>
   );
