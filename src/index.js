@@ -10,7 +10,7 @@ function Counter() {
 
   useEffect(() => {
     console.log("useEffect");
-  });
+  }, [ ]);
 
   return (
     <div>
