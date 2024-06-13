@@ -1,16 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import { Greeting, UserCard } from './Greeting';
-import Product, { Navbar } from './Product';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Greeting />
-    <UserCard />
-    <Product />
-    <Navbar />
-  </React.StrictMode>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+function Greeting() {
+  return <div>
+  <h1>Hello, Cusco!</h1>
+ 
+ 
+  
+  </div>
+}
+
+root.render(<>
+  { Greeting()}
+  { Greeting()}
+  { Greeting()}
+  { Greeting()}
+
+
+  </>
 );
-
