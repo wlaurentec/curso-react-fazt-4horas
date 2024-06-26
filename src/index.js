@@ -1,19 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { Greeting, UserCard } from "./Greeting";
-import Product, { Navbar } from "./Product";
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <UserCard
-      name="John"
-      amount={1000}
-      married={true}
-      points={[99, 22, 32]}
-      address={{ city: "New York", country: "USA" }}
-    />
+    <App />
   </React.StrictMode>
 );
