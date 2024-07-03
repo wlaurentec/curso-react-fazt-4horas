@@ -1,25 +1,15 @@
-export function Greeting() {
-  const user = {
-    firstName: "Dima",
-    lastName: "Kozlov",
-  }
-
-  function add(a, b) {
-    return a + b
-  }
-
+export function Greeting({title, name = "User"}) {
+  console.log(title, name)
   return (
     <>
-      <h1>Hello, {user.firstName} {user.lastName}!</h1>
-      <p>It is {new Date().toLocaleTimeString()}.</p>
+      <h1>It is {title} {name}.</h1>
       <p>It is {new Date().toLocaleDateString()}.</p>
-      <p>It is {new Date().toLocaleTimeString()}.</p> 
-      <p>Sum = {add(1, 2)}</p>
     </>
   )
 }
 
-export function UserCard () {
+export function UserCard (props) {
+  console.log(props)
   return (
     <>
       <h1>User Card</h1>
